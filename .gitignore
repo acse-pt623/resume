@@ -6,6 +6,7 @@ Archieve/
 *.lof
 *.log
 *.lot
+*.fdb_latexmk
 *.fls
 *.out
 *.toc
