@@ -49,7 +49,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
@@ -58,7 +58,7 @@
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{#3} & \textit{ #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -66,13 +66,13 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{#3} & \textit{ #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{#1} & \textit{ #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -92,19 +92,10 @@
 \begin{document}
 
 %----------HEADING-----------------
-% \begin{center}
-%   {\LARGE \textbf{Peifeng Tan}}
-% \end{center}
-
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-% \textbf{\href{https://github.com/acse-pt623}{Peifeng Tan}} & University Email : \href{mailto:pt623@ic.ac.uk}{pt623@ic.ac.uk}\\
-% \href{https://github.com/acse-pt623}{https://github.com/acse-pt623} & Personal Email : \href{mailto:tanxionji.1999@gmail.com}{tanxionji.1999@gmail.com} \\
-% & Mobile : \href{tel:+4407826740870}{+44 07826740870} \\
-% \end{tabular*}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\large Peifeng Tan} & \href{mailto:pt623@ic.ac.uk}{pt623@ic.ac.uk} \\
-  \href{https://github.com/acse-pt623}{github.com/acse-pt623} & \href{mailto:tanxionji.1999@gmail.com}{tanxionji.1999@gmail.com} \\
-  \href{tel:+4407826740870}{+44 07826740870} & \\
+  \textbf{\large Peifeng Tan} \\
+  \href{mailto:tan19991103@outlook.com}{tan19991103@outlook.com} \\
+  \href{tel:+8617801231696}{+86 17801231696} \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -127,13 +118,15 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {AIP}{London, UK}
-      {Personal Research}{June 2024 - Present}
-      \resumeItemListStart
-        \resumeItem{Geonatiq LTD-Commodity Prices Prediction}
-          {Use machine learning and sentiment analysis to predict commodity prices.}
-      \resumeItemListEnd
+  \resumeSubheading
+  {API London Investment Company \& GeonatiQ (AI Company)}{London, UK}
+  {Researcher}{June 2024 - September 2024}
+  \resumeItemListStart
+    \item{ {Conducted independent research on the factors influencing copper prices and the market structure of the London Metal Exchange.} }
+    \item{ {Developed deep learning models for 5-day copper price forecasting, utilizing LSTM and TCN architectures.} } 
+    \item{ {Implemented a transformer-inspired attention mechanism for market relationship modeling and copper price prediction, achieving a daily relative absolute error as low as 0.025.} }
+    \item{ {Addressed time-lag issues in LSTM models by applying Empirical Mode Decomposition (EMD) to obtain more daily labels. Combined a Bayesian model to incorporate both random walk and overall trend factors.} }
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -145,14 +138,14 @@
       {Predicting Tropical Cyclone Behavior through Deep Learning}{}
       {Personal Research}{Jan 2024}
       \resumeItemListStart
-      \item\small{
-        {Constructed a deep learning model using PyTorch, predicting subsequent storm imagery for three future time points, and storm velocity for multiple consecutive moments, based on historical storm data and satellite imagery.}
+      \item{
+        {Built deep learning models using PyTorch to predict storm behavior based on past storm data and satellite imagery. The model forecasts storm images for three consecutive future time points and storm velocity over multiple time steps.} 
       }
-      \item\small{
-        {Primarily responsible for building a CNN-ConvLSTM model, using the first ten time points of temporal labels, ocean labels, and storm images as input to predict the storm velocity at the last time point.}
+      \item{
+        {Led the development of a CNN-ConvLSTM model, utilizing time labels, ocean data, and storm images from the previous ten time points to predict the storm velocity at the final time step.}
       }
-      \item\small{
-        {GitHub: \href{https://github.com/ese-msc-2023/acds-the-day-after-tomorrow-yolanda.git}{https://github.com/ese-msc-2023/acds-the-day-after-tomorrow-yolanda.git}}
+      \item {
+        {Key Achievements: Successfully predicted future satellite images of tropical cyclones across different ocean regions. Reduced the relative error of storm velocity predictions to 0.031.} 
       }
       \resumeItemListEnd
 
@@ -160,14 +153,11 @@
       {Gerardium Rush Optimization Project}{}
       {Group Research}{May 2024}
       \resumeItemListStart
-      \item\small{
-        {Developed an optimization tool for mineral processing circuits using C++ and genetic algorithms. Enhanced computational efficiency with parallel processing via OpenMP and MPI.}
+      \item{
+        {Developed an optimization tool for mineral processing circuits using C++ and genetic algorithms. Enhanced computational efficiency through parallel processing with OpenMP and MPI.}
       }
-      \item\small{
-        {Key Achievements: Implemented core simulation and genetic algorithm in C++. Utilized OpenMP and MPI to accelerate simulations, improving performance and scalability.}
-      }
-      \item\small{
-        {GitHub: \href{https://github.com/ese-msc-2023/acs-gerardium-rush-pentlandite}{https://github.com/ese-msc-2023/acs-gerardium-rush-pentlandite}}
+      \item{
+        {Key Achievements: Successfully computed the optimal process flow. Leveraged MPI for parallel computations, reducing the optimization process time by several orders of magnitude.}
       }
       \resumeItemListEnd
 
@@ -175,34 +165,26 @@
       {X-ray Finger Image Generation and Discrimination}{}
       {Personal Research}{Jan 2024}
       \resumeItemListStart
-      \item\small{
-        {In the first part, trained a GAN or VAE generative model to create images of human hands under X-ray.}
+      \item{
+        {Developed a GAN or VAE generative model to create high-quality X-ray images of human fingers.} 
       }
-      \item\small{
-        {GitHub: \href{ https://github.com/ese-msc-2023/dlmodule-coursework-1-acse-pt623.git}{ https://github.com/ese-msc-2023/dlmodule-coursework-1-acse-pt623.git}}
-      }
-      \item\small{
-        {In the second part, trained a ResNet34 model capable of distinguishing between real images, and those generated by GAN
-        and VAE.}
-      }
-      \item\small{
-        {GitHub: \href{ https://github.com/ese-msc-2023/dlmodule-coursework-2-acse-pt623.git}{ https://github.com/ese-msc-2023/dlmodule-coursework-2-acse-pt623.git}}
+      \item{
+        {Trained a ResNet34 model to distinguish between real images and those generated by GAN and VAE, with slightly lower performance in differentiating GAN-generated images from real ones.}
       }
       \resumeItemListEnd
 
       \resumeSubheading
-      {Data Science and Big Data Analytics - Theory and Practice Online Project}{MIT}
+      {Data Science and Big Data Analytics - Theory and Practice Online Project}{}
       {Group Research,Professor Mark Vogelsberger, MIT}{Aug 2020 - Sep 2020}
       \resumeItemListStart
-      \item\small{
-        {Extracted data from the web and large databases, focusing on MongoDB. Developed machine learning models using TensorFlow and Keras.}
+      \item{
+        {Learned data retrieval techniques, using web scraping to extract data from the web and large databases (with a focus on MongoDB). Gained expertise in machine learning tasks and programming with TensorFlow and Keras, while exploring development environments like Python, R, and Julia.} 
       }
-      \item\small{
-        {Implemented an AI-based doctor application capable of interacting with patients through NLP and detecting cancer through
-        CNN-based image analysis.}
+      \item{
+        {Developed an AI-based doctor application that interacts with patients using NLP and detects cancer through image analysis using CNN.} 
       }
-      \item\small{
-        {Implemented an AI-based doctor application for NLP and cancer detection using CNNs. Published a paper at IPEC 2021.}
+      \item{
+        {Key Achievements: Completed the final project and published a paper: Tianci Xu, Liming Liu, Peifeng Tan, “A Cancer Diagnose System Using Deep Learning”, 2021 Asia-Pacific Conference on Image.}
       }
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -211,10 +193,11 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Programme Languages}{: Python, C++, Matlab, Java, Assembly Language}
-     \hfill
-     \textbf{Language}{: Mandarin (native), English (fluent), French (beginner)}
+     \textbf{Programme Languages}{: Python, C++, OpenMP, MPI, Matlab, Java, Assembly Language}\\
    }
+   \item{
+     \textbf{Language}{: Mandarin (native), English (fluent), French (beginner)}
+    }
  \resumeSubHeadingListEnd
 
 
